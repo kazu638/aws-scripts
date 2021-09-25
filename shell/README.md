@@ -2,8 +2,8 @@
 
 ## 概要
 
-スクリプト内の変数`DELETE_TIME`で指定された秒数間使用されていない IAM ロールを削除する。
-変数`except_role_list`に削除不可の IAM ロールを記載する。
+スクリプト内の変数`DELETE_TIME`で指定された秒数間使用されていない IAM ロールを削除する。  
+変数`except_role_list`に削除不可の IAM ロールを記載する。  
 引数で aws cli の profile を指定可能。
 
 ## 引数
@@ -15,14 +15,15 @@ Usage: ./old_iam_role_delete_script.sh [-p|--profile]
 ```
 
 ## ログ
-スクリプト実行時、標準出力以外にログファイルが出力される。以下ログファイルの例。
-- スクリプトのログ
-    - `old_iam_role_delete_script.sh_20210925_195844.log`
-- 削除したインスタンスプロファイルリスト
-    - `delete_instance_profile_20210925_195844.log`
-- 削除したIAMロールリスト
-    - `delete_role_20210925_195844.log`
 
+スクリプト実行時、標準出力以外にログファイルが出力される。以下ログファイルの例。
+
+- スクリプトのログ
+  - `old_iam_role_delete_script.sh_20210925_195844.log`
+- 削除したインスタンスプロファイルリスト
+  - `delete_instance_profile_20210925_195844.log`
+- 削除した IAM ロールリスト
+  - `delete_role_20210925_195844.log`
 
 ## 実行例
 
